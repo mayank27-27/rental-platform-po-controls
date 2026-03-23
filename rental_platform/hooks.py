@@ -1,7 +1,7 @@
 app_name = "rental_platform"
 app_title = "Rental Platform"
-app_publisher = "Mayank "
-app_description = "Rental Billing Platform"
+app_publisher = "Mayank"
+app_description = "Rental Billing App"
 app_email = "mayankm2777@gmail.com"
 app_license = "mit"
 
