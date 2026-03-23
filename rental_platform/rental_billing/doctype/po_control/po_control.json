@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-18 22:17:48.727982",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "po_details_section",
+  "po_number",
+  "customer",
+  "rental_contract",
+  "po_total_value",
+  "po_expiry_date",
+  "amount_utilised",
+  "remaining_balance",
+  "utilisation",
+  "status",
+  "alert_sent_80",
+  "alert_sent_90"
+ ],
+ "fields": [
+  {
+   "fieldname": "po_details_section",
+   "fieldtype": "Section Break",
+   "label": "PO details"
+  },
+  {
+   "fieldname": "po_number",
+   "fieldtype": "Data",
+   "label": "PO Number"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "rental_contract",
+   "fieldtype": "Link",
+   "label": "Rental Contract",
+   "options": "Rental Contract"
+  },
+  {
+   "fieldname": "po_total_value",
+   "fieldtype": "Currency",
+   "label": "PO Total Value"
+  },
+  {
+   "fieldname": "po_expiry_date",
+   "fieldtype": "Date",
+   "label": "PO Expiry Date"
+  },
+  {
+   "fieldname": "amount_utilised",
+   "fieldtype": "Currency",
+   "label": "Amount Utilised"
+  },
+  {
+   "fieldname": "remaining_balance",
+   "fieldtype": "Currency",
+   "label": "Remaining Balance"
+  },
+  {
+   "fieldname": "utilisation",
+   "fieldtype": "Percent",
+   "label": "Utilisation %"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExhausted\nExpired"
+  },
+  {
+   "default": "0",
+   "fieldname": "alert_sent_80",
+   "fieldtype": "Check",
+   "label": "Alert Sent 80"
+  },
+  {
+   "default": "0",
+   "fieldname": "alert_sent_90",
+   "fieldtype": "Check",
+   "label": "Alert Sent 90"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-22 18:18:20.412430",
+ "modified_by": "Administrator",
+ "module": "Rental Billing",
+ "name": "PO Control",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
